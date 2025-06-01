@@ -23,9 +23,15 @@ public class tabelaHash {
     }
 
     private int funcaoHashDiv(String palavra) {
+        if (palavra == null || palavra.isEmpty()) return 0;
+
         char letra = palavra.toLowerCase().charAt(0);
-        int codigo = letra - 'a'; 
-        return codigo % capacidade;
+
+        if (letra >= 'a' && letra <= 'z') {
+            return letra - 'a';
+        } else {
+            return capacidade - 1;
+        }
     }
 
     public void inserir(Palavra p) {
