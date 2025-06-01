@@ -8,7 +8,7 @@ public class Palavra implements Comparable<Palavra> {
     }
 
     public void adicionarLinha(int linha) {
-        if (!linhas.contains(linha)) {
+        if (!linhas.contem(linha)) {
             linhas.adicionar(linha);
         }
     }
@@ -23,7 +23,7 @@ public class Palavra implements Comparable<Palavra> {
 
     @Override
     public String toString() {
-        return texto + " " + linhas.toLineString();
+        return texto + " " + linhas.obterLinha();
     }
 
     @Override
