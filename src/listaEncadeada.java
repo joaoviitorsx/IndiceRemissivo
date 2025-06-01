@@ -19,6 +19,10 @@ public class listaEncadeada<T> {
         tamanho = 0;
     }
 
+    public int tamanho() {
+        return tamanho;
+    }
+
     public void adicionar(T elemento) {
         Nodo<T> novoNodo = new Nodo<>(elemento);
         if (primeiro == null) {
@@ -31,28 +35,24 @@ public class listaEncadeada<T> {
         tamanho++;
     }
 
-    public String toLineString() {
-        StringBuilder sb = new StringBuilder();
-        Nodo<T> curr = primeiro;
-        while (curr != null) {
-            sb.append(curr.dado);
-            if (curr.proximo != null) sb.append(" ");
-            curr = curr.proximo;
-        }
-        return sb.toString();
-    }
-
-    public int tamanho() {
-        return tamanho;
-    }
-
-    public boolean contains(T elemento) {
+    public String obterLinha() {
+        StringBuilder textoFinal = new StringBuilder();
         Nodo<T> atual = primeiro;
         while (atual != null) {
-            if (atual.dado.equals(elemento)) {
+            textoFinal.append(atual.dado);
+            if (atual.proximo != null) textoFinal.append(" ");
+            atual = atual.proximo;
+        }
+        return textoFinal.toString();
+    }
+
+    public boolean contem(T elemento) {
+        Nodo<T> nodoAtual = primeiro;
+        while (nodoAtual != null) {
+            if (nodoAtual.dado.equals(elemento)) {
                 return true;
             }
-            atual = atual.proximo;
+            nodoAtual = nodoAtual.proximo;
         }
         return false;
     }
