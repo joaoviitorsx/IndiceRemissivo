@@ -1,0 +1,81 @@
+a 1 3 6
+alem 8
+algoritmos 3
+aliada 6
+ao 3 6
+apenas 2
+aplicada 1
+aprende 5
+as 4
+bem 1
+cada 5
+codigo 2
+codigos 6
+com 5
+complexos 5
+conhecimento 6
+constante 3
+construido 7
+criar 3
+criativa 8
+criatividade 6
+da 8
+de 2 4 5 8
+dedicacao 4
+desafios 5
+desenvolver 3
+desenvolvimento 4
+diante 5
+do 4
+e 2 4 5 6 7 8
+eficazes 3
+eficiente 2
+elegantes 6
+em 1 4 6
+erro 5
+escrever 2
+esforco 7
+etapas 4
+experimentacao 7
+expressao 8
+foi 7
+forma 2 8
+funcionais 6
+fundamentais 4
+grande 7
+ideias 1
+intuicao 3
+logica 2
+mas 2
+mesmo 5
+muita 7
+nao 2
+nenhum 7
+o 5
+paciencia 4 7
+para 3
+permite 3
+persiste 5
+poderosas 1
+portanto 8
+pratica 3
+problemas 2
+programacao 1
+programador 3 5
+programar 2 8
+quando 1
+resolver 2
+resulta 6
+sao 4
+sem 7
+simples 1
+sistema 7
+software 4
+solucoes 1
+tambem 2 8
+tecnica 8
+tecnico 6
+todas 4
+transforma 1
+uma 8
+vai 8

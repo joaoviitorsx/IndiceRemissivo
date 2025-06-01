@@ -1,3 +1,8 @@
-Programação é uma atividade criativa.
-Programar exige prática e paciência.
-A paciência leva ao sucesso.
+A programação, quando bem aplicada, transforma ideias simples em soluções poderosas.
+Programar não é apenas escrever código, mas também resolver problemas de forma lógica e eficiente.
+A prática constante permite ao programador desenvolver intuição para criar algoritmos eficazes.
+Paciência e dedicação são fundamentais em todas as etapas do desenvolvimento de software.
+Mesmo diante de desafios complexos, o programador persiste e aprende com cada erro.
+A criatividade, aliada ao conhecimento técnico, resulta em códigos elegantes e funcionais.
+Nenhum grande sistema foi construído sem esforço, paciência e muita experimentação.
+Portanto, programar vai além da técnica — é também uma forma de expressão criativa.
