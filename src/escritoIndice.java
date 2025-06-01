@@ -24,10 +24,10 @@ public class escritoIndice {
                 }
             }
 
-            System.out.println("✅ Índice remissivo salvo em: " + caminhoSaida);
+            System.out.println("indice remissivo salvo em: " + caminhoSaida);
 
         } catch (IOException e) {
-            System.out.println("Erro ao gerar o índice remissivo: " + e.getMessage());
+            System.out.println("erro ao gerar o índice remissivo: " + e.getMessage());
         }
     }
 
