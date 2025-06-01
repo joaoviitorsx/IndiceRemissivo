@@ -1,3 +1,7 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class tabelaHash {
 
     private abb[] tabela;
@@ -31,7 +35,7 @@ public class tabelaHash {
         if (existente != null) {
             for (int i = 0; i < p.getLinhas().tamanho(); i++) {
                 existente.adicionarLinha(Integer.parseInt(
-                    p.getLinhas().toLineString().split(" ")[i]
+                    p.getLinhas().obterLinha().split(" ")[i]
                 ));
             }
         } else{
@@ -48,6 +52,17 @@ public class tabelaHash {
     public void imprimirIndiceRemissivo() {
         for (int i = 0; i < capacidade; i++) {
             tabela[i].imprimirEmOrdem();
+        }
+    }
+
+    public void exportarIndiceRemissivo(String caminhoSaida) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(caminhoSaida))) {
+            for (int i = 0; i < capacidade; i++) {
+                tabela[i].exportarEmOrdem(bw);
+            }
+            System.out.println("indice remissivo completo exportado para: " + caminhoSaida);
+        } catch (IOException e) {
+            System.out.println("Erro ao exportar indice remissivo: " + e.getMessage());
         }
     }
 }
