@@ -83,7 +83,7 @@ public class abb {
     }
 
     public void exportarEmOrdem(BufferedWriter bw) throws IOException {
-    exportarEmOrdem(raiz, bw);
+        exportarEmOrdem(raiz, bw);
     }
 
     private void exportarEmOrdem(Nodo atual, BufferedWriter bw) throws IOException {

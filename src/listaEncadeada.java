@@ -56,5 +56,4 @@ public class listaEncadeada<T> {
         }
         return false;
     }
-
 }

@@ -19,7 +19,7 @@ public class escritoIndice {
                     bw.write(encontrada.toString());
                     bw.newLine();
                 } else {
-                    bw.write(palavraChave + " - Não encontrada");
+                    bw.write(palavraChave + " - nao encontrada");
                     bw.newLine();
                 }
             }

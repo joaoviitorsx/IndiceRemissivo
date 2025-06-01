@@ -62,7 +62,7 @@ public class tabelaHash {
             }
             System.out.println("indice remissivo completo exportado para: " + caminhoSaida);
         } catch (IOException e) {
-            System.out.println("Erro ao exportar indice remissivo: " + e.getMessage());
+            System.out.println("erro ao exportar indice remissivo: " + e.getMessage());
         }
     }
 }

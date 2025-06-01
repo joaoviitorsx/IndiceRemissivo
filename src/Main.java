@@ -5,7 +5,7 @@ public class Main {
         String caminhoTexto = "C:\\Users\\joaov\\OneDrive\\Documentos\\Faculdade\\IndiceRemissivo\\teste\\texto.txt";
         leitorArquivo.processarTexto(caminhoTexto, hash);
 
-        System.out.println("Índice Remissivo:");
+        System.out.println("indices remissivos:");
         hash.imprimirIndiceRemissivo();
 
         String caminhoSainda = "C:\\Users\\joaov\\OneDrive\\Documentos\\Faculdade\\IndiceRemissivo\\teste\\indice.txt";

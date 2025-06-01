@@ -21,12 +21,11 @@ public class leitorArquivo {
                     novaPalavra.adicionarLinha(numeroLinha);
                     hash.inserir(novaPalavra);
                 }
-
                 numeroLinha++;
             }
 
         } catch (IOException e) {
-            System.out.println("Erro ao ler o arquivo: " + e.getMessage());
+            System.out.println("erro na leitura:" + e.getMessage());
         }
     }
 
