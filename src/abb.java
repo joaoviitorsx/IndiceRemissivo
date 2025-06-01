@@ -1,3 +1,6 @@
+import java.io.BufferedWriter;
+import java.io.IOException;
+
 public class abb {
     private class Nodo {
         public Palavra valor;
@@ -43,7 +46,7 @@ public class abb {
             atual.direito = inserir(nova, atual.direito);
         } else {
             for (int i = 0; i < nova.getLinhas().tamanho(); i++) {
-                atual.valor.adicionarLinha(nova.getLinhas().toLineString().charAt(i) - '0');
+                atual.valor.adicionarLinha(nova.getLinhas().obterLinha().charAt(i) - '0');
             }
         }
 
@@ -76,6 +79,19 @@ public class abb {
             imprimirEmOrdem(atual.esquerdo);
             System.out.println(atual.valor); 
             imprimirEmOrdem(atual.direito);
+        }
+    }
+
+    public void exportarEmOrdem(BufferedWriter bw) throws IOException {
+    exportarEmOrdem(raiz, bw);
+    }
+
+    private void exportarEmOrdem(Nodo atual, BufferedWriter bw) throws IOException {
+        if (atual != null) {
+            exportarEmOrdem(atual.esquerdo, bw);
+            bw.write(atual.valor.toString());
+            bw.newLine();
+            exportarEmOrdem(atual.direito, bw);
         }
     }
 }
