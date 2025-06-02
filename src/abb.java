@@ -40,25 +40,28 @@ public class abb {
         }
 
         int comp = nova.getTexto().compareTo(atual.valor.getTexto());
+
         if (comp < 0) {
             atual.esquerdo = inserir(nova, atual.esquerdo);
         } else if (comp > 0) {
             atual.direito = inserir(nova, atual.direito);
         } else {
-            for (int i = 0; i < nova.getLinhas().tamanho(); i++) {
-                atual.valor.adicionarLinha(nova.getLinhas().obterLinha().charAt(i) - '0');
+            String[] linhas = nova.getLinhas().obterLinha().split(" ");
+            for (String l : linhas) {
+                atual.valor.adicionarLinha(Integer.parseInt(l));
             }
         }
-
         return atual;
     }
+
 
     public Palavra buscar(String texto) {
         return buscar(texto.toLowerCase(), raiz);
     }
 
     private Palavra buscar(String texto, Nodo atual) {
-        if (atual == null) return null;
+        if (atual == null) 
+            return null;
 
         int comp = texto.compareTo(atual.valor.getTexto());
         if (comp < 0) {
