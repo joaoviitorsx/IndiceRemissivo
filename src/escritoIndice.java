@@ -12,7 +12,8 @@ public class escritoIndice {
 
             while ((palavraChave = br.readLine()) != null) {
                 palavraChave = limparTexto(palavraChave);
-                if (palavraChave == null || palavraChave.trim().isEmpty()) continue;
+                if (palavraChave == null || palavraChave.trim().isEmpty()) 
+                    continue;
 
                 Palavra encontrada = hash.buscar(palavraChave);
                 if (encontrada != null) {
@@ -35,7 +36,7 @@ public class escritoIndice {
         texto = texto.toLowerCase();
         texto = Normalizer.normalize(texto, Normalizer.Form.NFD);
         texto = texto.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
-        texto = texto.replaceAll("[^a-z0-9\\s]", " ").replaceAll("\\s+", " ").trim();
+        texto = texto.replaceAll("[^a-z0-9\\s\\-]", " ").replaceAll("\\s+", " ").trim();
         return texto;
     }
 }
