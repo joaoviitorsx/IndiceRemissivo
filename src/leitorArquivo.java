@@ -15,7 +15,8 @@ public class leitorArquivo {
                 String[] palavras = linha.split("\\s+");
 
                 for (String p : palavras) {
-                    if (p == null || p.trim().isEmpty()) continue;
+                    if (p == null || p.isEmpty()) 
+                        continue;
 
                     Palavra novaPalavra = new Palavra(p);
                     novaPalavra.adicionarLinha(numeroLinha);
@@ -31,15 +32,10 @@ public class leitorArquivo {
 
     private static String limparTexto(String texto) {
         texto = texto.toLowerCase();
-
         texto = Normalizer.normalize(texto, Normalizer.Form.NFD);
         texto = texto.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
-
-        texto = texto.replaceAll("[^a-z0-9\\s]", " ");
-
+        texto = texto.replaceAll("[^a-z0-9\\s\\-]", " ");
         texto = texto.replaceAll("\\s+", " ").trim();
-
         return texto;
     }
-
 }
