@@ -38,6 +38,7 @@ public class tabelaHash {
         int chave = funcaoHashDiv(p.getTexto());
 
         Palavra existente = tabela[chave].buscar(p.getTexto());
+        
         if (existente != null) {
             for (int i = 0; i < p.getLinhas().tamanho(); i++) {
                 existente.adicionarLinha(Integer.parseInt(
