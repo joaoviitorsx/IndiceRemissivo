@@ -8,10 +8,11 @@ public class Palavra implements Comparable<Palavra> {
     }
 
     public void adicionarLinha(int linha) {
-        if (!linhas.contem(linha)) {
+        if (!linhas.verificar(linha)) {
             linhas.adicionar(linha);
         }
     }
+
 
     public String getTexto() {
         return texto;
@@ -21,6 +22,8 @@ public class Palavra implements Comparable<Palavra> {
         return linhas;
     }
 
+
+
     @Override
     public String toString() {
         return texto + " " + linhas.obterLinha();
@@ -28,19 +31,49 @@ public class Palavra implements Comparable<Palavra> {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (!(obj instanceof Palavra)) return false;
+        if (this == obj) 
+            return true;
+
+        if (obj == null || !(obj instanceof Palavra)) 
+            return false;
+
         Palavra outra = (Palavra) obj;
-        return this.texto.equals(outra.texto);
+        String a = this.texto;
+        String b = outra.texto;
+
+        if (a.length() != b.length()) 
+            return false;
+
+        for (int i = 0; i < a.length(); i++) {
+            if (a.charAt(i) != b.charAt(i)) 
+                return false;
+        }
+        return true;
     }
 
     @Override
     public int hashCode() {
-        return texto.hashCode();
+        int hash = 0;
+        String s = this.texto;
+        for (int i = 0; i < s.length(); i++) {
+            hash = 31 * hash + s.charAt(i);
+        }
+        return hash;
     }
 
     @Override
     public int compareTo(Palavra outra) {
-        return this.texto.compareTo(outra.texto);
+        String textoA = this.texto;
+        String textoB = outra.texto;
+        int len = Math.min(textoA.length(), textoB.length());
+
+        for (int i = 0; i < len; i++) {
+            char charA = textoA.charAt(i);
+            char charB = textoB.charAt(i);
+            if (charA != charB) {
+                return charA - charB;
+            }
+        }
+        return textoA.length() - textoB.length();
     }
 }
