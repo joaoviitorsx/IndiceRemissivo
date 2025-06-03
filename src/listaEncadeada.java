@@ -46,7 +46,7 @@ public class listaEncadeada<T> {
         return textoFinal.toString();
     }
 
-    public boolean contem(T elemento) {
+    public boolean verificar(T elemento) {
         Nodo<T> nodoAtual = primeiro;
         while (nodoAtual != null) {
             if (nodoAtual.dado.equals(elemento)) {
