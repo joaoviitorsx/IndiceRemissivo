@@ -1,157 +1,143 @@
-a 12 18 20 44 47 58 59 60
-adora 60
-adorada 24 61
-agua 8
-amada 13 27 29 51 66 68
-america 45
-amigo 62 63
-amor 18 54
-amores 50
-ao 44 46
-as 3
-bala 62
-belo 22
-berco 43
-bosques 49
-braco 9
-brado 5
-brasil 17 26 45 54 65 69
-brilhou 7
-c 70
-campos 48
-ceu 7 19 44
-chuva 1 49 53
-clava 58
-colosso 22
-com 9
-conquistar 9
-conseguimos 9
-cruzeiro 20
-da 6 7 45 58
-de 5 18 54
-deitado 43
-desafia 12
-desce 18
-dessa 8 56
-deste 28 67
-diga 56
-do 3 20 44 46 47
-dos 28 67
-dyga 4
-e 6 18 19 23 44 56 57
-em 6 10 19 43
-entre 25 64
-ergues 58
-es 22 26 28 65 67
-espelha 23
-esperanca 18
-esplendido 43
-essa 23
-estrelado 55
-eternamente 43
-eterno 54
-filho 59
-filhos 28 67
-flamula 56
-florao 45
-flores 48
-foge 59
-formoso 19
-forte 9 22 58
-fulgidos 6
-fulguras 45
-futuro 23 57
-gaga 4
-garrida 47
-gentil 28 67
-gigante 21
-gloria 57
-grandeza 23
-guarda 1 49 53
-guardachuva 2
-heroico 5
-i 1
-idolatrada 14 52
-igualdade 8
-ii 42
-iluminado 46
-imagem 20
-impavido 22
-instante 7
-intenso 17
-ipiranga 3
-iv 4
-justica 58
-labaro 55
-lady 4
-laga 4
-liberdade 6 10
-limpido 19
-lindos 48
-lom 16
-louro 56
-luta 59
-luz 44
-mae 28 67
-mais 47 48 49 50
-mar 44
-margens 3
-mas 58
-mil 25 64
-morte 12 60
-mundo 46
-nao 59
-natureza 21
-nem 60
-nesse 7
-no 7 50 57
-nossa 50
-nosso 12
-nossos 49
-novo 46
-o 5 6 8 10 12 13 23 27 45 51 55 56 66
-ostentas 55
-outras 25 64
-ouviram 3
-parte 1 42
-passado 57
-patria 7 13 27 29 51 66 68
-paz 57
-peito 12
-pela 21
-penhor 8
-placidas 3
-povo 5
-profundo 44
-propria 12 21 60
-que 47 55 59
-quem 60
-raio 17
-raios 6
-resplandece 20
-retumbante 5
-risonho 19
-risonhos 48
-salve 15 53
-se 8 19 58
-seio 10 50
-seja 54
-simbolo 54
-sol 6 46
-solo 28 67
-som 44
-sonho 17
-te 60
-tem 48 49
-teme 60
-terra 18 24 47 61
-teu 10 19 23 50 59
-teus 48
-tu 26 65
-um 5 17 59
-veras 59
-verde 56
-vida 49 50
-vivido 17
-3po 70
-4 16
+a 2 3 4 6 7 8 9 11 13 14 15 16 19 20 23 24 25
+abordagem 23
+adequado 23
+alem 13
+algoritmo 2 12
+algoritmos 10 14 20 22
+altura 10 24
+ambos 8
+ao 17 20 22
+arvore 2 4 5 6 7 9 10 13 17 21 24 25
+arvores 11 16
+as 22
+assemelha 25
+avancados 11
+avl 6
+balanceada 4 5 17
+balanceamento 9 18 22 23
+binaria 2 4 5 13 14 17 21 25
+binarias 11 16
+busca 3 5 13 14 25
+buscas 12
+cada 23
+chamado 8
+colisoes 15
+combinacao 11
+como 3 5 14 23
+complexidade 2 5 6
+considerar 16
+cruciais 2
+da 9 10 15 24
+dados 1 4 6 13 19 20
+das 7 19
+de 1 2 4 5 6 8 11 16 19 20 21 22 25
+degenerada 25
+depende 15
+desempenho 6 12 19
+destacar 17
+deve 15 16
+diferentes 14
+direita 8
+disso 13
+distribuir 4
+diversas 1
+dos 13 19
+drasticamente 7
+dupla 23
+e 1 2 3 8 9 11 13 19 21 22 23
+eficiencia 2 10 19
+eficiente 4
+elementos 16
+em 1 6 7 10 15 16 17 18
+encadeada 25
+enquanto 5
+entender 22
+entre 20
+escolha 20
+escolhida 15
+esquerda 8
+esse 8
+estruturas 1 6 19
+evitando 24
+excluido 16
+exclusao 3 16
+execucao 21
+exemplo 3 12 20
+filhos 8 17
+folha 9
+forem 8
+forma 4
+funcao 3 15
+fundamental 19
+garante 24
+garantindo 10
+grandes 20
+hash 3 11 12 15 21
+impactar 21
+implementar 22
+importante 22
+insercao 3 14
+java 1 19
+levar 4
+linear 14
+linguagem 1
+lista 25
+log 6
+logaritmica 24
+manipular 20
+mantem 6
+manter 9 13 18
+melhorar 11
+minimizar 15
+minimo 10
+n 5 6
+na 18
+nao 4 17
+nas 10
+necessario 18
+nivel 10
+no 7 8 9 16 17
+nuances 22
+nulos 8
+o 5 6 9 11 13 16 18 19 21 23
+onde 25
+operacoes 2 7 10
+ordem 13
+os 8
+ou 14 17
+para 2 4 9 12 13 18 19
+permaneca 24
+pode 4 7 11 12 14 18 21
+por 3 12 20
+programacao 1 18
+que 1 15 17 24
+raiz 9
+rapidas 13
+realizar 18
+referir 14
+remover 17
+rotacao 23
+rotacoes 18
+sao 2
+se 8 14 16 24 25
+ser 16 18
+significativamente 21
+simples 23
+subnos 7
+superior 9
+suporta 1
+tabela 3 12 15 21
+tabelas 11
+tecnica 9
+tem 16
+tempo 21
+ter 7
+termo 13
+torne 24
+um 1 7 8 10 12 17
+uma 1 3 4 5 7 9 12 13 15 17 20 21 25
+utiliza 3
+utilizar 12
+vale 17
+variar 7
+volumes 20

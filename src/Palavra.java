@@ -23,7 +23,6 @@ public class Palavra implements Comparable<Palavra> {
     }
 
 
-
     @Override
     public String toString() {
         return texto + " " + linhas.obterLinha();
@@ -63,17 +62,17 @@ public class Palavra implements Comparable<Palavra> {
 
     @Override
     public int compareTo(Palavra outra) {
-        String textoA = this.texto;
-        String textoB = outra.texto;
-        int len = Math.min(textoA.length(), textoB.length());
+        String palavraA = this.texto;
+        String palavraB = outra.texto;
+        int len = Math.min(palavraA.length(), palavraB.length());
 
         for (int i = 0; i < len; i++) {
-            char charA = textoA.charAt(i);
-            char charB = textoB.charAt(i);
+            char charA = palavraA.charAt(i);
+            char charB = palavraB.charAt(i);
             if (charA != charB) {
                 return charA - charB;
             }
         }
-        return textoA.length() - textoB.length();
+        return palavraA.length() - palavraB.length();
     }
 }

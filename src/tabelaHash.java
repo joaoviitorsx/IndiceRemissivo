@@ -22,8 +22,9 @@ public class tabelaHash {
         return this.nElementos;
     }
 
-    private int funcaoHashDiv(String palavra) {
-        if (palavra == null || palavra.isEmpty()) return 0;
+    private int HashDiv(String palavra) {
+        if (palavra == null || palavra.isEmpty()) 
+            return 0;
 
         char letra = palavra.toLowerCase().charAt(0);
 
@@ -35,7 +36,7 @@ public class tabelaHash {
     }
 
     public void inserir(Palavra p) {
-        int chave = funcaoHashDiv(p.getTexto());
+        int chave = HashDiv(p.getTexto());
 
         Palavra existente = tabela[chave].buscar(p.getTexto());
         
@@ -52,7 +53,7 @@ public class tabelaHash {
     }
 
     public Palavra buscar(String texto) {
-        int chave = funcaoHashDiv(texto);
+        int chave = HashDiv(texto);
         return tabela[chave].buscar(texto);
     }
 
